@@ -83,32 +83,18 @@ public class CubeMesh : MonoBehaviour
 
     private Vector3[] GenerateNormals()
     {
-        Vector3[] normals = new Vector3[24];
-
-        for (int i = 0; i <= 23; i++)
+        Vector3[] normals =
         {
-            if (i <= 3)
-            {
-                normals[i] = Vector3.back;
-            }
-            else if (i <= 7)
-            {
-                normals[i] = Vector3.right;
-            } else if (i <= 11)
-            {
-                normals[i] = Vector3.forward;
-            }
-            else if (i <= 15)
-            {
-                normals[i] = Vector3.left;
-            } else if (i <= 19)
-            {
-                normals[i] = Vector3.up;
-            } else if (i <= 23)
-            {
-                normals[i] = Vector3.down;
-            }
-        }
+            Vector3.back, Vector3.back, Vector3.back, Vector3.back,
+            Vector3.right, Vector3.right, Vector3.right, Vector3.right,
+            Vector3.forward, Vector3.forward, Vector3.forward, Vector3.forward,
+            Vector3.left, Vector3.left, Vector3.left, Vector3.left,
+            Vector3.up, Vector3.up, Vector3.up, Vector3.up,
+            Vector3.down, Vector3.down, Vector3.down, Vector3.down,
+
+        };
+
+
 
         return normals;
     }
