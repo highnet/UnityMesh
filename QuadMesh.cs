@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class QuadMesh : MonoBehaviour
 {
-    
-   [SerializeField] private float _width;
-   [SerializeField] private float _height;
-   [SerializeField] private Material _material;
 
-   private MeshFilter _meshFilter;
-   private Renderer _renderer;
-   private Mesh _mesh;
+    [SerializeField] private float _width;
+    [SerializeField] private float _height;
+    [SerializeField] private Material _material;
+
+    private MeshFilter _meshFilter;
+    private Renderer _renderer;
+    private Mesh _mesh;
 
     void Start()
     {
